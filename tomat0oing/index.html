@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>t0mato0ing | Mango Sticky Rice Fresh Setiap Hari</title>
+  <meta name="description" content="Mango sticky rice homemade, mangga segar musim ini, ketan lembut, santan gurih. Ready stock dan dikirim cepat.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 2. IDENTITAS TOKO: nama + logo -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand" aria-label="t0mato0ing">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#FFB703"/>
+          <path d="M32 14c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z" fill="#FB8500"/>
+          <path d="M34 12c2-5 8-6 12-4-1 5-6 8-12 4z" fill="#2D6A4F"/>
+        </svg>
+        <span>t0mato0ing</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#kebijakan">Kebijakan</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#keranjang" class="cart-link">Keranjang <span id="cartCount" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="beranda" class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="tag">Mangga lagi musim 🥭</p>
+          <h1>Mango Sticky Rice Fresh, Dibuat Setiap Hari</h1>
+          <p class="lead">Ketan pulen, santan gurih, dan mangga manis pilihan. Dikemas rapi dalam boks, cocok untuk camilan, hampers, maupun acara kecil.</p>
+          <a href="#produk" class="btn">Pesan Sekarang</a>
+          <a href="#tentang" class="btn btn-outline">Kenali Kami</a>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="emoji">🥭🍚</div>
+          <p>Tanpa pengawet<br>Dibuat fresh<br>Santan asli</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FOTO & INFO PRODUK -->
+    <section id="produk" class="section">
+      <div class="container">
+        <h2>Produk Kami</h2>
+        <p class="sub">Semua produk dibuat saat ada pesanan. Stok terbatas setiap hari.</p>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- KERANJANG & CHECKOUT -->
+    <section id="keranjang" class="section alt">
+      <div class="container cart-wrap">
+        <div>
+          <h2>Keranjang Belanja</h2>
+          <div id="cartItems" class="cart-items"></div>
+          <p class="total">Total: <strong id="cartTotal">Rp0</strong></p>
+        </div>
+        <form id="checkoutForm" class="checkout" novalidate>
+          <h3>Data Pemesan</h3>
+          <label>Nama lengkap
+            <input type="text" id="custName" required placeholder="Nama kamu">
+          </label>
+          <label>No. WhatsApp
+            <input type="tel" id="custPhone" required placeholder="08xxxxxxxxxx">
+          </label>
+          <label>Alamat pengiriman
+            <textarea id="custAddress" rows="3" required placeholder="Alamat lengkap"></textarea>
+          </label>
+          <label>Metode pembayaran
+            <select id="custPay">
+              <option>Transfer Bank (BNI/BRImo)</option>
+              <option>E-Wallet (GoPay/ShopeePay/DANA)</option>
+              <option>COD (tempat tertentu)</option>
+            </select>
+          </label>
+          <button type="submit" class="btn full">Pesan via WhatsApp</button>
+          <p id="formMsg" class="form-msg" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 7. PEMBAYARAN AMAN -->
+    <section class="section">
+      <div class="container">
+        <h2>Pembayaran Aman</h2>
+        <div class="grid three">
+          <div class="card info"><h3>🏦 Transfer Bank</h3><p>BNI atau BRImo atas nama <strong>[Nama Pemilik Usaha]</strong>. Konfirmasi bukti transfer via WhatsApp.</p></div>
+          <div class="card info"><h3>📱 E-Wallet</h3><p>Bisa dibayar lewat GoPay, ShopeePay, atau DANA. Detail pembayaran dikirim setelah pesanan dikonfirmasi.</p></div>
+          <div class="card info"><h3>🔒 Transaksi Terlindungi</h3><p>Pesanan baru diproses setelah pembayaran terkonfirmasi. Kami tidak pernah meminta PIN atau OTP.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TENTANG KAMI + 8. LEGALITAS -->
+    <section id="tentang" class="section alt">
+      <div class="container two">
+        <div>
+          <h2>Tentang Kami</h2>
+          <p>t0mato0ing adalah usaha kuliner rumahan yang berfokus pada mango sticky rice. Kami memakai mangga yang sedang musim agar rasanya manis dan harganya tetap terjangkau, dengan ketan pulen dan santan yang dimasak sendiri.</p>
+          <p>Tujuan kami sederhana: menghadirkan camilan dessert yang fresh, rapi, dan ramah di kantong.</p>
+        </div>
+        <div class="card info">
+          <h3>Legalitas Usaha</h3>
+          <ul class="plain">
+            <li>Nama usaha: t0mato0ing</li>
+            <li>NIB: <strong>[isi nomor NIB]</strong> (dummy)</li>
+            <li>Jenis usaha: Makanan &amp; minuman rumahan</li>
+            <li>Lokasi: UIN Salatiga</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ULASAN PEMBELI -->
+    <section id="ulasan" class="section">
+      <div class="container">
+        <h2>Ulasan Pembeli</h2>
+        <p class="sub">Contoh ulasan (dummy untuk keperluan tugas).</p>
+        <div class="grid three" id="reviewGrid"></div>
+      </div>
+    </section>
+
+    <!-- 4. KEBIJAKAN TERTULIS -->
+    <section id="kebijakan" class="section alt">
+      <div class="container">
+        <h2>Kebijakan Toko</h2>
+        <div class="accordion" id="policyAcc">
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">Kebijakan Pengiriman</button>
+            <div class="acc-body"><p>Pesanan dikirim di hari yang sama jika masuk sebelum pukul 12.00 WIB. Pengiriman memakai kurir instan/same day untuk area Jabodetabek agar produk tetap segar. Produk sebaiknya dikonsumsi maksimal 1 hari setelah diterima.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">Kebijakan Retur &amp; Pengembalian Dana</button>
+            <div class="acc-body"><p>Karena produk makanan, retur hanya berlaku bila produk rusak, tumpah, atau tidak sesuai pesanan. Kirim foto/video unboxing maksimal 3 jam setelah produk diterima. Kami akan mengganti produk atau mengembalikan dana.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">Kebijakan Privasi</button>
+            <div class="acc-body"><p>Data nama, nomor WhatsApp, dan alamat hanya dipakai untuk memproses pesanan dan tidak dibagikan kepada pihak lain selain kurir pengiriman.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">Kebijakan Pembayaran</button>
+            <div class="acc-body"><p>Pembayaran dapat dilakukan melalui transfer bank BNI, BRImo, atau e-wallet (GoPay, ShopeePay, DANA). COD tersedia di tempat tertentu. Pesanan transfer/e-wallet diproses setelah pembayaran terkonfirmasi.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. KONTAK AKTIF + 9. MEDIA SOSIAL -->
+    <section id="kontak" class="section">
+      <div class="container two">
+        <div>
+          <h2>Hubungi Kami</h2>
+          <ul class="plain contact">
+            <li>💬 WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a></li>
+            <li>✉️ Email: <a href="mailto:halo@manggaketankita.id">halo@manggaketankita.id</a></li>
+            <li>📍 Alamat: UIN Salatiga</li>
+            <li>🕘 Jam layanan: 08.00 - 20.00 WIB</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Ikuti Kami</h2>
+          <div class="socials">
+            <a class="btn btn-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn-outline" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            <a class="btn btn-outline" href="https://shopee.co.id/" target="_blank" rel="noopener">Shopee</a>
+          </div>
+          <p class="sub">Ganti tautan di atas dengan akun asli tokomu.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> t0mato0ing. NIB: [isi nomor NIB]. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
